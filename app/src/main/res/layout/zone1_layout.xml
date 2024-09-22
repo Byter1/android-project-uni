@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"> <!-- Сохраняем общий padding -->
+
+    <!-- Название зоны -->
+    <TextView
+        android:id="@+id/zone_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Икроножные мышцы"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Изображение зоны -->
+    <ImageView
+        android:id="@+id/image_zone1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/muscle1"
+        android:contentDescription="Изображение мышцы"
+        app:layout_constraintTop_toBottomOf="@id/zone_name_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp"/> <!-- Увеличенный отступ снизу -->
+
+    <!-- Описание зоны -->
+    <TextView
+        android:id="@+id/zone_description_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Описание: Икроножные мышцы важны для многих видов физической активности, таких как бег и прыжки. Они обеспечивают стабилизацию голеностопного сустава и помогают в координации движений."
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/image_zone1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
